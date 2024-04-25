@@ -1420,7 +1420,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rainDrop: {fileID: 5815210285615010447, guid: d94c703ab216a4748af508f0e0826b4b,
     type: 3}
-  numberOfObjects: 100
+  numberOfObjects: 1
   dropHeight: 50
   minX: -100
   maxX: 100
