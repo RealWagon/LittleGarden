@@ -305,3 +305,7 @@ Received Import Request.
 Start importing Assets/StarterAssets/ThirdPersonController/Prefabs/NestedParentArmature_Unpack.prefab using Guid(c708a3b79cd542b42bbfedb17e213bc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36b11a05ad77786bba4a0a85c979de8b') in 1.036667 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 567
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 89, details: Operation aborted.
+AssetImportWorker is now disconnected from the server
+Process exiting

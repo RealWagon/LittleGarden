@@ -233,3 +233,91 @@ Received Import Request.
 Start importing Assets/StarterAssets/ThirdPersonController/Prefabs/PlayerCapsule.prefab using Guid(2553cec8fdb3eb643bbe9f2ec880c472) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88a51ad401fb6078b5c1c40cd943a8cf') in 0.983795 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 46.284119 seconds.
+  path: Assets/StarterAssets/ThirdPersonController/Character/Models
+  artifactKey: Guid(f99c02f4392c29d4dad06bad32b0bfb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StarterAssets/ThirdPersonController/Character/Models using Guid(f99c02f4392c29d4dad06bad32b0bfb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '797ef85febc9a70274242818f1cec12d') in 0.001177 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.070303 seconds.
+  path: Assets/StarterAssets/ThirdPersonController/Character/Models/Armature.fbx
+  artifactKey: Guid(36078ab0369161e49a29d349ae3e0739) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StarterAssets/ThirdPersonController/Character/Models/Armature.fbx using Guid(36078ab0369161e49a29d349ae3e0739) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0403088ce05bdada086b9e7c8230812f') in 0.283586 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 151
+========================================================================
+Received Import Request.
+  Time since last request: 131.562208 seconds.
+  path: Assets/StarterAssets/ThirdPersonController/Character/Materials/M_Armature_Arms.mat
+  artifactKey: Guid(766fd3ff04aab4745a764d33daac86fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StarterAssets/ThirdPersonController/Character/Materials/M_Armature_Arms.mat using Guid(766fd3ff04aab4745a764d33daac86fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4443490cc7c8b0f6e97b4e644f23d73') in 0.729552 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.151287 seconds.
+  path: Assets/StarterAssets/ThirdPersonController/Character/Animations/Jump--InAir.anim.fbx
+  artifactKey: Guid(063aa479676c4084ebf187660ca0a7b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StarterAssets/ThirdPersonController/Character/Animations/Jump--InAir.anim.fbx using Guid(063aa479676c4084ebf187660ca0a7b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ec879b62765a6d6a614595df3575c03') in 0.003605 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 143
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/StarterAssets/ThirdPersonController/Character/Animations/Stand--Idle.anim.fbx
+  artifactKey: Guid(12e52e465ed793a4d801955e9f964a82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StarterAssets/ThirdPersonController/Character/Animations/Stand--Idle.anim.fbx using Guid(12e52e465ed793a4d801955e9f964a82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b506d3a0a463bc606183b8f883dbfd40') in 0.003680 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 143
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/StarterAssets/ThirdPersonController/Character/Animations/Locomotion--Run_S.anim.fbx
+  artifactKey: Guid(a073c604c44135e438eeeaef77058ac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StarterAssets/ThirdPersonController/Character/Animations/Locomotion--Run_S.anim.fbx using Guid(a073c604c44135e438eeeaef77058ac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9af820f2991b5d4f87d650a97b6db99b') in 0.002912 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 143
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/StarterAssets/ThirdPersonController/Character/Animations/Locomotion--Run_N.anim.fbx
+  artifactKey: Guid(16114d403eabb53438de032c6f0d1deb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StarterAssets/ThirdPersonController/Character/Animations/Locomotion--Run_N.anim.fbx using Guid(16114d403eabb53438de032c6f0d1deb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff0eee48dcfa4b50ce17e891f7f78554') in 0.003092 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 143
+========================================================================
+Received Import Request.
+  Time since last request: 18.018792 seconds.
+  path: Assets/Models/Start/Base 2.mat
+  artifactKey: Guid(8243ab4b6a7d74b1381bb87364ffe70c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Start/Base 2.mat using Guid(8243ab4b6a7d74b1381bb87364ffe70c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c5ec6784184ab3fabf0e5a620c3c5f0') in 0.061129 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 17.205756 seconds.
+  path: Assets/Models/Start/Base 3.mat
+  artifactKey: Guid(cc153edf998d84dd4a0a970fccdb946f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Start/Base 3.mat using Guid(cc153edf998d84dd4a0a970fccdb946f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e76858c13882a1972513c98153131f70') in 0.016354 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 33.550453 seconds.
+  path: Assets/Models/Start/Base 4.mat
+  artifactKey: Guid(95b681dddc2ee459e8c0929560187e28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Start/Base 4.mat using Guid(95b681dddc2ee459e8c0929560187e28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5827f79a15bdab4a2ba7fcb8fa83be00') in 0.007187 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 26.206190 seconds.
+  path: Assets/Models/Start/Base 5.mat
+  artifactKey: Guid(a2f487e0aaa3c4735bf2b7dc8b198c4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Start/Base 5.mat using Guid(a2f487e0aaa3c4735bf2b7dc8b198c4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24c9a8d0acee6212a9a051938d8a000b') in 0.006716 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
