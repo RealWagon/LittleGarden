@@ -1,0 +1,282 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.24f1 (334eb2a0b267) revision 3362482'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'nl' Physical Memory: 16236 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+C:/Users/Egon/OneDrive/Documenten/Unity/Little Garden
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+62122
+Successfully changed project path to: C:/Users/Egon/OneDrive/Documenten/Unity/Little Garden
+C:/Users/Egon/OneDrive/Documenten/Unity/Little Garden
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [28128] Host "[IP] 192.168.1.97 [Port] 0 [Flags] 2 [Guid] 2347720004 [EditorId] 2347720004 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-WAGON) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [28128] Host "[IP] 192.168.1.97 [Port] 0 [Flags] 2 [Guid] 2347720004 [EditorId] 2347720004 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-WAGON) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
+Refreshing native plugins compatible for Editor in 13.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.24f1 (334eb2a0b267)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Egon/OneDrive/Documenten/Unity/Little Garden/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2560)
+    Vendor:   NVIDIA
+    VRAM:     5996 MB
+    Driver:   31.0.15.5222
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56104
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.010272 seconds.
+- Loaded All Assemblies, in  0.351 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.273 seconds
+Domain Reload Profiling: 621ms
+	BeginReloadAssembly (105ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (61ms)
+	LoadAllAssembliesAndSetupDomain (143ms)
+		LoadAssemblies (102ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (141ms)
+			TypeCache.Refresh (140ms)
+				TypeCache.ScanAssembly (127ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (273ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (220ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (144ms)
+			ProcessInitializeOnLoadMethodAttributes (56ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.714 seconds
+Refreshing native plugins compatible for Editor in 4.93 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.796 seconds
+Domain Reload Profiling: 1506ms
+	BeginReloadAssembly (147ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (480ms)
+		LoadAssemblies (357ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (210ms)
+			TypeCache.Refresh (175ms)
+				TypeCache.ScanAssembly (160ms)
+			ScanForSourceGeneratedMonoScriptInfo (23ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (796ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (613ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (91ms)
+			ProcessInitializeOnLoadAttributes (425ms)
+			ProcessInitializeOnLoadMethodAttributes (76ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 5.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6076 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 86 unused Assets / (1.2 MB). Loaded Objects now: 6540.
+Memory consumption went from 234.1 MB to 232.9 MB.
+Total: 3.992500 ms (FindLiveObjects: 0.444000 ms CreateObjectMapping: 0.210300 ms MarkObjects: 2.909300 ms  DeleteObjects: 0.427900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/SettingsGUILayout.cs: 1bf4073b7b90c06a4199be7cdd2735ca -> 
+  custom:scripting/monoscript/fileName/ShaderUtil.cs: 8aa3744413fbeaaae190f8c6dee6905f -> 
+  custom:scripting/monoscript/fileName/ICustomSettings.cs: 4bc47e9c00373f861b48f19fe8f6ae73 -> 
+  custom:scripting/monoscript/fileName/IHasDefault.cs: d43bb28eb20323cadb56dcaf3018f0fe -> 
+  custom:scripting/monoscript/fileName/LoadoutInfo.cs: 660f9f99b06f3cfdf56e6fc4f679894f -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/EditorUtility.cs: fd7bc1cf4cb314b2e4044096579e18bf -> 
+  custom:scripting/monoscript/fileName/Debug.cs: 4c2f10687bd0c87c831e6811e627e0e6 -> 
+  custom:scripting/monoscript/fileName/BrushModeSmooth.cs: 9762aefe2e037dcf4702e36265e35152 -> 
+  custom:scripting/monoscript/fileName/PolybrushMeshEditor.cs: a5ec6b3755e05d7130319baf99889a45 -> 
+  custom:scripting/monoscript/fileName/BrushModePaint.cs: ad731ab0efa5cd31747f925ba0a64283 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/Math.cs: b05e6fe7b7b70eb7df756c7970368adc -> 
+  custom:scripting/monoscript/fileName/UserSettingsRepository.cs: ae597ef6d1f82569d0712c7aa6402b32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/PostProcessPrefabs.cs: 13d01213489803effa3f907206256e3e -> 
+  custom:scripting/monoscript/fileName/MenuItems.cs: 8d54c2439982349a7c091b6484598645 -> 
+  custom:scripting/monoscript/fileName/PolybrushMesh.cs: b13535429dd7631295d7f30f10258036 -> 
+  custom:scripting/monoscript/fileName/PlayerPickUpDrop.cs: ba220b35de8b1b502829973ff538e625 -> 
+  custom:scripting/monoscript/fileName/PolybrushSettings.cs: 7a86956bdb6482957dafe063643fbd0f -> 
+  custom:scripting/monoscript/fileName/ProBuilderBridge.cs: 186617cd7b3fcd59d01fb5d92e4d7d07 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/PolyGUILayout.cs: a2d931728dcc1c9d50835161d4589cd6 -> 
+  custom:scripting/monoscript/fileName/Handles.cs: f2195f809ec78e95742e559ce449999f -> 
+  custom:scripting/monoscript/fileName/PrefabAndSettings.cs: 0a674363a29bc97c29543bf4c51859b9 -> 
+  custom:scripting/monoscript/fileName/SplatSet.cs: 8cd131b8adb46833879b9eb4ec56c4d8 -> 
+  custom:scripting/monoscript/fileName/BrushTarget.cs: 1cebe5f4fedf7901a801065b3aa48d37 -> 
+  custom:scripting/monoscript/fileName/PolybrushEditor.cs: bb02f12000caf1a044e160301581e313 -> 
+  custom:scripting/monoscript/fileName/Util.cs: 8faf186b4bbf64a176189fb2de23bb5e -> 
+  custom:scripting/monoscript/fileName/BrushModeRaiseLower.cs: 278f820d50964cad6079414acbcbd89a -> 
+  custom:scripting/monoscript/fileName/ColorPaletteEditor.cs: b4a36a6140cfa45f721e8c6e642dd0be -> 
+  custom:scripting/monoscript/fileName/BrushTool.cs: 85d9c1772f81bc51861a29793c33aa6f -> 
+  custom:scripting/monoscript/fileName/AttributeLayout.cs: 9b89cd2462186d7967cf59ff7451342c -> 
+  custom:scripting/monoscript/fileName/AttributeLayoutJsonEditor.cs: 8988a927113e14ef60e525a5f398a3d9 -> 
+  custom:scripting/monoscript/fileName/GradientSerializer.cs: 6b7fa6800afb71dec66666b9d562e855 -> 
+  custom:scripting/monoscript/fileName/PreferenceDictionaryEditor.cs: 96d30a34a8bc29f424b8b898122c20dc -> 
+  custom:scripting/monoscript/fileName/IconImporter.cs: 2d62c02cc4cb901de901ddb71ac0c829 -> 
+  custom:scripting/monoscript/fileName/PrefUtility.cs: 71ce90803e8fdc60b7b4c0d7ea11d3d2 -> 
+  custom:scripting/monoscript/fileName/BakeAdditionalVertexStreams.cs: 0cd348ed4de98c84c7963da5e66b5b47 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:scripting/monoscript/fileName/ConfigurableWindow.cs: ff72e024ae4b2331fcb2a3ad579fb17e -> 
+  custom:scripting/monoscript/fileName/BrushModeMesh.cs: 0d383ad89d94110c67474666931f1f36 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/BoundsUtility.cs: 9cfbb798a4ff3aff949740a99108a287 -> 
+  custom:scripting/monoscript/fileName/BrushModePrefab.cs: 97ff9cf27cf7c218e6eeb4707f634ecd -> 
+  custom:scripting/monoscript/fileName/BrushModeTexture.cs: beb1027957a0f11b7e4308b7086a5289 -> 
+  custom:scripting/monoscript/fileName/OverlayRenderer.cs: 0388742b1599d907de14c6da1495e0b9 -> 
+  custom:scripting/monoscript/fileName/BrushModeSculpt.cs: edc8d8b85023ef5748d55f9a342b38d1 -> 
+  custom:scripting/monoscript/fileName/BrushSettings.cs: e0c059dbf8095a9b329bb54ea9bbd088 -> 
+  custom:scripting/monoscript/fileName/SceneUtility.cs: 437e63f17d37986a83cc39fdecbc1360 -> 
+  custom:scripting/monoscript/fileName/UserSettings.cs: f2f6e07d0ff2c4f74ff78dca7a736f53 -> 
+  custom:scripting/monoscript/fileName/PrefabPalette.cs: 020ad89cb8deeb7ff64c8fe341cedae5 -> 
+  custom:scripting/monoscript/fileName/z_AdditionalVertexStreams.cs: 9fd252dcba4c7c9f6d2907502793e3f5 -> 
+  custom:scripting/monoscript/fileName/ProBuilderInterface.cs: f687b6f4d626c6ac55e929eee00e1d6d -> 
+  custom:scripting/monoscript/fileName/PackageSettingsRepository.cs: 3d7ef57a71ca69fa31cb043698cb6983 -> 
+  custom:scripting/monoscript/fileName/CommonEdge.cs: 62a0f10b1b5f789c5f3080b78656547e -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/PolyMesh.cs: 0a933c4b0e6fac014dea4a50ccafb456 -> 
+  custom:scripting/monoscript/fileName/FileSettingsRepository.cs: 26dd9fac1ce03dccc58801e79f909037 -> 
+  custom:scripting/monoscript/fileName/SubMesh.cs: c705873f5fbdc7fc35376f4b71cd91a3 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/ShaderMetaDataUtility.cs: 0f68828362ed09bc31792cb99e3af962 -> 
+  custom:scripting/monoscript/fileName/ISettingsRepository.cs: c644889b75049794adfff59de4a57ec6 -> 
+  custom:scripting/monoscript/fileName/PolyAsset.cs: bbbee96ae71f7894696168a6e787ec75 -> 
+  custom:scripting/monoscript/fileName/PrefabLoadoutEditor.cs: 56c8937838f8f6e498a5c031b5c9e8b2 -> 
+  custom:scripting/monoscript/fileName/IconUtility.cs: a40fc387b68a3a1f7f796a7dd6bb272b -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/UserSettingsProvider.cs: cf93c9e7f0242ada7160bbcb19be7d9f -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/PolybrushSettingsProvider.cs: 3c64d14a3715108eee2d8c87a1464b1e -> 
+  custom:scripting/monoscript/fileName/ReflectionUtility.cs: 5ed4a23839d9e19ad40d0feb49cd2b3d -> 
+  custom:scripting/monoscript/fileName/EditableObject.cs: d43824d7166c8897567beda97b909355 -> 
+  custom:scripting/monoscript/fileName/ComponentIndex.cs: 39b22662a9da5e85c836f667f01f70c7 -> 
+  custom:scripting/monoscript/fileName/PrefabPaletteEditor.cs: 5692ef0c2f7b13184145c5b987dfcc29 -> 
+  custom:scripting/monoscript/fileName/ProjectUserSettings.cs: 45b935268a6ef891e8577fe004b3f872 -> 
+  custom:scripting/monoscript/fileName/ColorMask.cs: a25e82598c03d90bc54d67eeaeb16981 -> 
+  custom:scripting/monoscript/fileName/SplatWeightEditor.cs: 97d595152c4387609ea4f2515eb6fcb7 -> 
+  custom:scripting/monoscript/fileName/SplatWeight.cs: e12e48d501be17a1969934095154e7e6 -> 
+  custom:scripting/monoscript/fileName/IValid.cs: 27e1a7910f7152539582dd746f0a479a -> 
+  custom:scripting/monoscript/fileName/PolyEdge.cs: 45320c7be4fae1b068438d4e6bc5b336 -> 
+  custom:scripting/monoscript/fileName/ZoomOverride.cs: 7c310863cacc8aa98eaa83358cc868f4 -> 
+  custom:scripting/monoscript/fileName/MirrorSettingsEditor.cs: 033e9fb698bac953886bdede9bf9f483 -> 
+  custom:scripting/monoscript/fileName/PreviewDatabase.cs: edee20e34a1ca90f8a6d44fe594dc7f8 -> 
+  custom:scripting/monoscript/fileName/BrushMirror.cs: 900f96e57d476b8480556e2883774ffd -> 
+  custom:scripting/monoscript/fileName/MirrorSettings.cs: 253af48b43d6bcbf1cd0c60207c381e7 -> 
+  custom:scripting/monoscript/fileName/ColorPalette.cs: 711cd8a323b69c76d8811974e82da2b8 -> 079510324a1c49ced22d2a909747c573
+  custom:scripting/monoscript/fileName/ValueWrapper.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/RndVec3.cs: 0823606673dce2b8dfd547046891a6c9 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/MeshPreview.cs: ea4f563f2835c56d60266511e2be4910 -> 
+  custom:scripting/monoscript/fileName/PreferenceDictionary.cs: 637171674e502db102514100379139dc -> 
+  custom:scripting/monoscript/fileName/SettingsDictionary.cs: deb5cd076ff61db1f023cc41ad83ead7 -> 
+  custom:scripting/monoscript/fileName/BrushMode.cs: 6dea0ddfa2a45d2978dd0b13296d701d -> 
+  custom:scripting/monoscript/fileName/HierarchyChanged.cs: 84abd15764b10af4cb07f928b3997537 -> 
+  custom:scripting/monoscript/fileName/MeshChannel.cs: 8b5a7a71b6cca63206947900a773d2c7 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/MeshUtility.cs: d9cfc38589295931e00f31bfa19a733f -> 
+  custom:scripting/monoscript/fileName/RaycastHit.cs: 01828dabe30e1b6ecc8756e2196be6b4 -> 
+  custom:scripting/monoscript/fileName/Settings.cs: ea9d1b04d3864b3b689bed16ba2743db -> 
+  custom:scripting/monoscript/fileName/PolyGUI.cs: c026b72096e81d3cc96e377b60eece5f -> 
+  custom:scripting/monoscript/fileName/Pref.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:scripting/monoscript/fileName/Attributes.cs: 9d3861389974f0823e7e341aa6c23dae -> 
+  custom:scripting/monoscript/fileName/UserSetting.cs: 9a8b723fb560f0e7a90b73c9a63a7958 -> 
+  custom:scripting/monoscript/fileName/Direction.cs: b401a571035111dc122d6238c4a25a65 -> 
+  custom:scripting/monoscript/fileName/BrushSettingsEditor.cs: 07ca9b157eb5df9a12de3204940168e5 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 234667.323398 seconds.
+  path: Assets/New Terrain.asset
+  artifactKey: Guid(4d12ca3f731ef9f47a4c2e3855b2a17a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain.asset using Guid(4d12ca3f731ef9f47a4c2e3855b2a17a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7639276a1c920c999cb606c5b358490') in 0.031430 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
