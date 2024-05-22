@@ -3,12 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - CinemachineTarget
+  - WaterDrop
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - PickUpAbleItems
   - Water
   - UI
   - 
