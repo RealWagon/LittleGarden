@@ -14,7 +14,9 @@ GameObject:
   - component: {fileID: 2275739621137727838}
   - component: {fileID: 6930864424958461500}
   - component: {fileID: 1387517225844140055}
-  m_Layer: 0
+  - component: {fileID: -6463875607638915703}
+  - component: {fileID: -4298735050893258247}
+  m_Layer: 3
   m_Name: Drop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,6 +154,32 @@ MonoBehaviour:
   fxPrefab: {fileID: 8127285865718168602, guid: 11ad90c5bee40024e8e788c7d0f3540a,
     type: 3}
   fxVelocityThreshold: 0
+--- !u!114 &-6463875607638915703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5815210285615010447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e46b37f37b69944b39d0c1033f19eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-4298735050893258247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5815210285615010447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c0f6ff3baa36a4292a6c198bb7f698, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material1: {fileID: 0}
+  material2: {fileID: 0}
 --- !u!1 &6745112423919788778
 GameObject:
   m_ObjectHideFlags: 0
@@ -163,7 +191,7 @@ GameObject:
   - component: {fileID: 3861002370529371078}
   - component: {fileID: 1361624351799955942}
   - component: {fileID: 2544423382881716777}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Spring
   m_TagString: Untagged
   m_Icon: {fileID: 0}

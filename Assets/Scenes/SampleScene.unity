@@ -4598,6 +4598,7 @@ GameObject:
   - component: {fileID: 859724789}
   - component: {fileID: 859724793}
   - component: {fileID: 859724794}
+  - component: {fileID: 859724795}
   m_Layer: 3
   m_Name: Cube
   m_TagString: Untagged
@@ -4730,6 +4731,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &859724795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859724788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c0f6ff3baa36a4292a6c198bb7f698, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material1: {fileID: 2100000, guid: 1315c784b24468545a21ec0c4719b327, type: 2}
+  material2: {fileID: -876546973899608171, guid: 24eff985e1f95af4c9be437e09074524,
+    type: 3}
 --- !u!1 &933228091
 GameObject:
   m_ObjectHideFlags: 0
@@ -6250,17 +6266,17 @@ PrefabInstance:
     - target: {fileID: 5542111180780342647, guid: c708a3b79cd542b42bbfedb17e213bc1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.018531486
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5542111180780342647, guid: c708a3b79cd542b42bbfedb17e213bc1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5931543
+      value: 0.44500005
       objectReference: {fileID: 0}
     - target: {fileID: 5542111180780342647, guid: c708a3b79cd542b42bbfedb17e213bc1,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.2483873
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 5542111180780342647, guid: c708a3b79cd542b42bbfedb17e213bc1,
         type: 3}
@@ -8132,6 +8148,100 @@ Transform:
   m_Children: []
   m_Father: {fileID: 600548091}
   m_LocalEulerAnglesHint: {x: -1.621, y: 102.877, z: -14.977}
+--- !u!1001 &1793592440
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -4298735050893258247, guid: d94c703ab216a4748af508f0e0826b4b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4298735050893258247, guid: d94c703ab216a4748af508f0e0826b4b,
+        type: 3}
+      propertyPath: material1
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: 24eff985e1f95af4c9be437e09074524,
+        type: 3}
+    - target: {fileID: -4298735050893258247, guid: d94c703ab216a4748af508f0e0826b4b,
+        type: 3}
+      propertyPath: material2
+      value: 
+      objectReference: {fileID: 2100000, guid: 1315c784b24468545a21ec0c4719b327, type: 2}
+    - target: {fileID: 2275739621137727838, guid: d94c703ab216a4748af508f0e0826b4b,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5815210285615010447, guid: d94c703ab216a4748af508f0e0826b4b,
+        type: 3}
+      propertyPath: m_Name
+      value: Drop
+      objectReference: {fileID: 0}
+    - target: {fileID: 5815210285615010447, guid: d94c703ab216a4748af508f0e0826b4b,
+        type: 3}
+      propertyPath: m_TagString
+      value: WaterDrop
+      objectReference: {fileID: 0}
+    - target: {fileID: 8718464429145287423, guid: d94c703ab216a4748af508f0e0826b4b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5531044
+      objectReference: {fileID: 0}
+    - target: {fileID: 8718464429145287423, guid: d94c703ab216a4748af508f0e0826b4b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.13420582
+      objectReference: {fileID: 0}
+    - target: {fileID: 8718464429145287423, guid: d94c703ab216a4748af508f0e0826b4b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 8718464429145287423, guid: d94c703ab216a4748af508f0e0826b4b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8718464429145287423, guid: d94c703ab216a4748af508f0e0826b4b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8718464429145287423, guid: d94c703ab216a4748af508f0e0826b4b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8718464429145287423, guid: d94c703ab216a4748af508f0e0826b4b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8718464429145287423, guid: d94c703ab216a4748af508f0e0826b4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8718464429145287423, guid: d94c703ab216a4748af508f0e0826b4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8718464429145287423, guid: d94c703ab216a4748af508f0e0826b4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d94c703ab216a4748af508f0e0826b4b, type: 3}
 --- !u!1 &1810159968
 GameObject:
   m_ObjectHideFlags: 0
@@ -8669,6 +8779,7 @@ GameObject:
   - component: {fileID: 1916181034}
   - component: {fileID: 1916181033}
   - component: {fileID: 1916181032}
+  - component: {fileID: 1916181036}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -8691,7 +8802,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -8762,6 +8873,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1916181036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916181031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e96cf901e9abe44ca1a82dd00d14302, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTag: WaterDrop
 --- !u!1 &1919068476
 GameObject:
   m_ObjectHideFlags: 0
@@ -9713,3 +9837,4 @@ SceneRoots:
   - {fileID: 2099589815}
   - {fileID: 1916181035}
   - {fileID: 859724792}
+  - {fileID: 1793592440}
