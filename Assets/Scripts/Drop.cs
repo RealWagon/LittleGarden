@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Drop : MonoBehaviour
@@ -6,7 +7,9 @@ public class Drop : MonoBehaviour
     [SerializeField] private Rigidbody rigidbody;
     [SerializeField] private Rigidbody springRigidbody;
     [SerializeField] private GameObject fxPrefab;
+    [SerializeField] private GameObject explosionFxPrefab;
     [SerializeField] private float fxVelocityThreshold;
+    [SerializeField] private float dedonateTimer;
 
     private Material material;
 
@@ -33,6 +36,12 @@ public class Drop : MonoBehaviour
     {
         Vector3 springDir = springRigidbody.position - rigidbody.position;
         material.SetVector(SpringDirID, springDir);
+        
+     /*   if (dedonateTimer <= 0)
+        {
+            Explode();
+        }
+        */
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -54,5 +63,27 @@ public class Drop : MonoBehaviour
         {
             Debug.LogError("FX Prefab is not assigned to Drop script.");
         }
+    } 
+
+   /* private void Explode()
+    {
+        Debug.Log("boom");
+        EXInstantiateFX();
+        
+        Destroy(GameObject);
     }
+    
+    private void EXInstantiateFX(Vector3 position)
+    {
+        if (explosionFxPrefab != null)
+        {
+            GameObject fxInstance1 = Instantiate(explosionFxPrefab , position, Quaternion.identity);
+            // You may want to handle the fxInstance here, for example, deactivate it after a certain time.
+        }
+        else
+        {
+            Debug.LogError("FX Prefab is not assigned to Drop script.");
+        }
+    }
+    */
 }
