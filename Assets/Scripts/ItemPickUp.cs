@@ -8,6 +8,7 @@ public class ItemPickUp : MonoBehaviour
 {
     [SerializeField] private Transform playerCameraTransform;
     [SerializeField] private Transform objectGrabPointTransform;
+    [SerializeField] private Transform objectDropPointTransform;
     [SerializeField] private LayerMask pickUpLayerMask;
     public float pickUpDistance;
     private PlayerInput _playerInput;
@@ -36,7 +37,7 @@ public class ItemPickUp : MonoBehaviour
         }
         else
         {
-            objectGrabbable.Drop();
+            objectGrabbable.Drop(objectDropPointTransform);
             objectGrabbable = null;
         }
 

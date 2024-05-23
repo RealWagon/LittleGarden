@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CinemachineTarget
   - WaterDrop
+  - Dirt_WaterDrop
   layers:
   - Default
   - TransparentFX

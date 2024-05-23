@@ -7,6 +7,8 @@ public class ObjectGrabbable : MonoBehaviour
 {
     private Rigidbody objectRigidbody;
     private Transform objectGrabPointTransform;
+    private Transform objectDropPointTransform;
+    private float waitDrop = 1f;
 
     private void Update()
     {
@@ -19,10 +21,13 @@ public class ObjectGrabbable : MonoBehaviour
         objectRigidbody.useGravity = false;
     }
 
-    public void Drop()
+    public void Drop(Transform objectDropPointTransform)
     {
-        this.objectGrabPointTransform = null;
+        this.objectGrabPointTransform = objectDropPointTransform;
+        
         objectRigidbody.useGravity = true;
+        
+        this.objectGrabPointTransform = null;
     }
 
     private void FixedUpdate()

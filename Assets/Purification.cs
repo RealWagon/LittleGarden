@@ -4,20 +4,54 @@ using UnityEngine;
 
 public class Purification : MonoBehaviour
 {
-    // The tag of the object that triggers the destruction
     public string targetTag = "WaterDrop";
+    public int health = 3;
+    public float scaleDuration = 0.5f;
 
-    // Ensure both objects have colliders and at least one of them has a Rigidbody component
+    private Vector3 initialScale;
+    private Vector3 targetScale;
+    private float scaleLerpTime;
+    private bool isScaling;
+
+    void Start()
+    {
+        initialScale = transform.localScale;
+        targetScale = initialScale;
+    }
+
+    void FixedUpdate()
+    {
+        if (isScaling)
+        {
+            scaleLerpTime += Time.deltaTime;
+            float t = scaleLerpTime / scaleDuration;
+            transform.localScale = Vector3.Lerp(transform.localScale, targetScale, t);
+
+            if (t >= 1f) isScaling = false;
+        }
+    }
 
     void OnTriggerEnter(Collider other)
     {
-        // Check if the other object has the target tag
-        if (other.CompareTag(targetTag))
+        if (other.CompareTag("WaterDrop"))
         {
-            // Destroy the other object (WaterDrop)
             Destroy(other.gameObject);
-            // Destroy this object (the object this script is attached to)
-            Destroy(gameObject);
+            health--;
+
+            targetScale = initialScale * (health / 3f);
+            scaleLerpTime = 0f;
+            isScaling = true;
+
+            if (health <= 0) Destroy(gameObject);
+        }
+        if (other.CompareTag("Dirt_WaterDrop"))
+        {
+            Destroy(other.gameObject);
+            health++;
+            
+            targetScale = initialScale * (health / 3f);
+            scaleLerpTime = 0f;
+            isScaling = true;
         }
     }
 }
