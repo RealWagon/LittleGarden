@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class ToggleMaterial : MonoBehaviour
@@ -47,6 +48,16 @@ public class ToggleMaterial : MonoBehaviour
                 drop.Wiggle();
             }
             usingMaterial1 = !usingMaterial1;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Flower"))
+        {
+            rend.material = material2;
+            gameObject.tag = "WaterDrop";
+            drop.Wiggle();
         }
     }
 }

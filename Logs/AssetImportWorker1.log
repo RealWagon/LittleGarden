@@ -187,3 +187,48 @@ Received Import Request.
 Start importing Assets/Models/Drop.prefab using Guid(d94c703ab216a4748af508f0e0826b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fbc6e0a014e36c6cd7ea947f2eb768e') in 0.808450 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 209.712320 seconds.
+  path: Assets/Models/Ancient Flower/Ancient_Flower.png
+  artifactKey: Guid(b913d18ec61e54495a11c9e9f1ba7bbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Ancient Flower/Ancient_Flower.png using Guid(b913d18ec61e54495a11c9e9f1ba7bbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5b367559fef7775fa219695dcabd1a6') in 0.089806 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Models/Ancient Flower/Ancient_Flower_MAT.mat
+  artifactKey: Guid(0b3b0e44448f044e7ace25abbac0833d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Ancient Flower/Ancient_Flower_MAT.mat using Guid(0b3b0e44448f044e7ace25abbac0833d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bbd9dcdd6fae8dc5747a2cf635b9598') in 2.465029 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/Models/Ancient Flower/Flower.png
+  artifactKey: Guid(54ed57b91518f4ddaa523dbd3854bc33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Ancient Flower/Flower.png using Guid(54ed57b91518f4ddaa523dbd3854bc33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0517bea8bed3caefaf124b27e6718c35') in 0.019577 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Models/Ancient Flower/Flower_emmission.png
+  artifactKey: Guid(2e55337dcf82249d69ddef35f90e5db6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Ancient Flower/Flower_emmission.png using Guid(2e55337dcf82249d69ddef35f90e5db6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28ea9bde867d6355ee07f31be2f7c22e') in 0.017173 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Models/Ancient Flower/Light_VFX.mat
+  artifactKey: Guid(3655bda78a18943d2add669f7dfc489d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Ancient Flower/Light_VFX.mat using Guid(3655bda78a18943d2add669f7dfc489d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d711f9f8597d304161b441db92d34f0') in 0.270195 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: De I/O-bewerking is afgebroken vanwege het afsluiten van een thread of vanwege een opdracht van een toepassing.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

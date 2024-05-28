@@ -8,6 +8,7 @@ TagManager:
   - WaterDrop
   - Dirt_WaterDrop
   - Gray_Zone
+  - Flower
   layers:
   - Default
   - TransparentFX
