@@ -15,7 +15,7 @@ public class Drop : MonoBehaviour
 
     private static readonly int SpringDirID = Shader.PropertyToID("_SpringDir");
 
-    private void Awake()
+    public void Wiggle()
     {
         MeshRenderer renderer = GetComponent<MeshRenderer>();
         material = renderer.material;

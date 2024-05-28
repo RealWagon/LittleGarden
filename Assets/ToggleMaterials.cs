@@ -8,8 +8,13 @@ public class ToggleMaterial : MonoBehaviour
     private Renderer rend;
     private bool usingMaterial1 = true;
     
+    private Drop drop;
+    
     void Start()
     {
+        drop = GetComponent<Drop>();
+        
+        drop.Wiggle();
         gameObject.tag = "Dirt_WaterDrop";
         rend = GetComponent<Renderer>();
         
@@ -32,11 +37,14 @@ public class ToggleMaterial : MonoBehaviour
             {
                 rend.material = material2;
                 gameObject.tag = "WaterDrop";
+                drop.Wiggle();
+                
             }
             else
             {
                 rend.material = material1;
                 gameObject.tag = "Dirt_WaterDrop";
+                drop.Wiggle();
             }
             usingMaterial1 = !usingMaterial1;
         }
