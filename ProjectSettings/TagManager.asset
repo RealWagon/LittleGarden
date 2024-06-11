@@ -7,8 +7,9 @@ TagManager:
   - CinemachineTarget
   - WaterDrop
   - Dirt_WaterDrop
-  - Gray_Zone
   - Flower
+  - Dead_Flower
+  - Gray_Zone
   layers:
   - Default
   - TransparentFX
@@ -16,8 +17,8 @@ TagManager:
   - PickUpAbleItems
   - Water
   - UI
-  - 
-  - 
+  - Ground
+  - player
   - 
   - 
   - 

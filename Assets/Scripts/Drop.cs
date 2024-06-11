@@ -1,27 +1,35 @@
+using System;
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Drop : MonoBehaviour
 {
-    [SerializeField] private Rigidbody rigidbody;
+    [SerializeField] private Rigidbody rb;
     [SerializeField] private Rigidbody springRigidbody;
     [SerializeField] private GameObject fxPrefab;
     [SerializeField] private GameObject explosionFxPrefab;
     [SerializeField] private float fxVelocityThreshold;
     [SerializeField] private float dedonateTimer;
+    [SerializeField] private float fxTimer = 2f;
 
+    private GameObject fxInstance;
     private Material material;
+    private float timer = 0f;
 
     private static readonly int SpringDirID = Shader.PropertyToID("_SpringDir");
+
+    private void Awake()
+    {
+        Wiggle();
+    }
 
     public void Wiggle()
     {
         MeshRenderer renderer = GetComponent<MeshRenderer>();
         material = renderer.material;
         renderer.material = material;
-        
-        if (rigidbody == null)
+
+        if (rb == null)
         {
             Debug.LogError("Rigidbody component is not assigned to Drop script.");
         }
@@ -34,14 +42,8 @@ public class Drop : MonoBehaviour
 
     private void Update()
     {
-        Vector3 springDir = springRigidbody.position - rigidbody.position;
+        Vector3 springDir = springRigidbody.position - rb.position;
         material.SetVector(SpringDirID, springDir);
-        
-     /*   if (dedonateTimer <= 0)
-        {
-            Explode();
-        }
-        */
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -54,36 +56,30 @@ public class Drop : MonoBehaviour
 
     private void InstantiateFX(Vector3 position)
     {
+        if (fxInstance != null)
+        {
+            Destroy(fxInstance);
+        }
+
         if (fxPrefab != null)
         {
-            GameObject fxInstance = Instantiate(fxPrefab, position, Quaternion.identity);
-            // You may want to handle the fxInstance here, for example, deactivate it after a certain time.
+            fxInstance = Instantiate(fxPrefab, position, Quaternion.identity);
+            StartCoroutine(CountUp());
         }
         else
         {
             Debug.LogError("FX Prefab is not assigned to Drop script.");
         }
-    } 
+    }
+    private IEnumerator CountUp()
+    {
+        while (timer < fxTimer)
+        {
+            timer += Time.deltaTime;
+            yield return null;
+        }
 
-   /* private void Explode()
-    {
-        Debug.Log("boom");
-        EXInstantiateFX();
-        
-        Destroy(GameObject);
+        Destroy(fxInstance);
+        timer = 0f; // Reset the timer
     }
-    
-    private void EXInstantiateFX(Vector3 position)
-    {
-        if (explosionFxPrefab != null)
-        {
-            GameObject fxInstance1 = Instantiate(explosionFxPrefab , position, Quaternion.identity);
-            // You may want to handle the fxInstance here, for example, deactivate it after a certain time.
-        }
-        else
-        {
-            Debug.LogError("FX Prefab is not assigned to Drop script.");
-        }
-    }
-    */
 }

@@ -1,14 +1,14 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int maxHealth ;
+    public int maxHealth;
     public int damagePerSecond;
     public int healingPerSecond;
     public float healingSpeed;
     public float damageSpeed; 
     public Health_Bar healthBar;
+    public Transform respawnPoint; // Assign this in the Inspector
 
     [SerializeField] int currentHealth;
     private float timeSinceDamage;
@@ -16,6 +16,8 @@ public class PlayerHealth : MonoBehaviour
     private bool isDead;
     private bool isTakingDamage;
     private bool isHealingDamage;
+    
+    private Rigidbody RB;
 
     private const int sceneNumber = 0;
 
@@ -23,6 +25,7 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth = maxHealth;
         healthBar.setMaxHealth(maxHealth);
+        RB = GetComponent<Rigidbody>();
     }
 
     private void Update()
@@ -33,7 +36,7 @@ public class PlayerHealth : MonoBehaviour
         if (currentHealth <= 0 && !isDead)
         {
             isDead = true;
-            // gameManager.SceneSwitch(sceneNumber);
+            Respawn();
         }
 
         if (isTakingDamage)
@@ -58,21 +61,34 @@ public class PlayerHealth : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other)
+
     {
         if (other.CompareTag("Gray_Zone"))
         {
             isTakingDamage = true;
             isHealingDamage = false;
+            timeSinceDamage = 0f; // Reset timeSinceDamage
         }
+
     }
 
+
     private void OnTriggerExit(Collider other)
+
     {
+
         if (other.CompareTag("Gray_Zone"))
+
         {
+
             isTakingDamage = false;
+
             isHealingDamage = true;
+
+            timeSinceHealing = 0f; // Reset timeSinceHealing
+
         }
+
     }
 
     private void ApplyDamage(int damage)
@@ -85,5 +101,13 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth = Mathf.Min(currentHealth + heal, maxHealth);
         healthBar.SetHealth(currentHealth);
+    }
+
+    private void Respawn()
+    {
+        transform.position = respawnPoint.position;
+        currentHealth = maxHealth;
+        healthBar.SetHealth(currentHealth);
+        isDead = false;
     }
 }

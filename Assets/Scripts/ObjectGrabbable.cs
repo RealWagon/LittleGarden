@@ -8,7 +8,6 @@ public class ObjectGrabbable : MonoBehaviour
     private Rigidbody objectRigidbody;
     private Transform objectGrabPointTransform;
     private Transform objectDropPointTransform;
-    private float waitDrop = 1f;
 
     private void Update()
     {

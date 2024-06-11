@@ -23,6 +23,7 @@ public class ToggleMaterial : MonoBehaviour
         {
             // Set the initial material
             rend.material = material1;
+            drop.Wiggle();
         }
         else
         {
@@ -30,7 +31,7 @@ public class ToggleMaterial : MonoBehaviour
         }
     }
     
-    void Update()
+  /*  void Update()
     {
         if (Input.GetKeyDown(KeyCode.C))
         {
@@ -49,7 +50,7 @@ public class ToggleMaterial : MonoBehaviour
             }
             usingMaterial1 = !usingMaterial1;
         }
-    }
+    }*/
 
     private void OnTriggerEnter(Collider other)
     {

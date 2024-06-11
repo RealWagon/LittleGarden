@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
+using Image = UnityEngine.UI.Image;
 
 public class ItemPickUp : MonoBehaviour
 {
@@ -13,11 +15,15 @@ public class ItemPickUp : MonoBehaviour
     public float pickUpDistance;
     private PlayerInput _playerInput;
 
+    public Image prompt;
+    private bool promptActive = false;
+
     private ObjectGrabbable objectGrabbable;
 
     private void Start()
     {
         _playerInput = GetComponent<PlayerInput>();
+        prompt.gameObject.SetActive(false);
     }
 
     private void OnInteract()
@@ -40,31 +46,38 @@ public class ItemPickUp : MonoBehaviour
             objectGrabbable.Drop(objectDropPointTransform);
             objectGrabbable = null;
         }
-
     }
 
-/*    private void Update()
+    private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Physics.Raycast(playerCameraTransform.position, playerCameraTransform.forward,
+                out RaycastHit raycastHit,
+                pickUpDistance, pickUpLayerMask))
         {
-            if (objectGrabbable == null)
+            if (raycastHit.transform.transform.TryGetComponent(out ObjectGrabbable grabbable))
             {
-                if (Physics.Raycast(playerCameraTransform.position, playerCameraTransform.forward,
-                        out RaycastHit raycastHit,
-                        pickUpDistance, pickUpLayerMask))
+                if (!promptActive)
                 {
-                    if (raycastHit.transform.transform.TryGetComponent(out objectGrabbable))
-                    {
-                        objectGrabbable.Grab(objectGrabPointTransform);
-                        Debug.Log("hit");
-                    }
+                    prompt.gameObject.SetActive(true);
+                    promptActive = true;
                 }
             }
             else
             {
-                objectGrabbable.Drop();
-                objectGrabbable = null;
+                if (promptActive)
+                {
+                    prompt.gameObject.SetActive(false);
+                    promptActive = false;
+                }
             }
         }
-    }*/
+        else
+        {
+            if (promptActive)
+            {
+                prompt.gameObject.SetActive(false);
+                promptActive = false;
+            }
+        }
+    }
 }
