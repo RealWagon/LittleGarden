@@ -267,5 +267,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material1: {fileID: -876546973899608171, guid: 24eff985e1f95af4c9be437e09074524,
     type: 3}
-  material2: {fileID: -876546973899608171, guid: e03062ef523c0dd48b334ddb8aaf489e,
-    type: 3}
+  material2: {fileID: 2100000, guid: 5fa257eb5c6dc8449b855cc55c8ea5e6, type: 2}

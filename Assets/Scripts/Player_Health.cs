@@ -18,9 +18,6 @@ public class PlayerHealth : MonoBehaviour
     private bool isHealingDamage;
     
     private Rigidbody RB;
-
-    private const int sceneNumber = 0;
-
     private void Start()
     {
         currentHealth = maxHealth;

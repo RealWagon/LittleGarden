@@ -17,10 +17,10 @@ public class RainSpawn : MonoBehaviour
 
     void FixedUpdate()
     {
-            DropObjects();
+        DropObjects();
     }
+
     // Function to drop objects
-    
     public void DropObjects()
     {
         for (int i = 0; i < numberOfObjects; i++)
@@ -28,5 +28,12 @@ public class RainSpawn : MonoBehaviour
             Vector3 randomPosition = new Vector3(Random.Range(minX, maxX), dropHeight, Random.Range(minZ, maxZ));
             Instantiate(rainDrop, randomPosition, Quaternion.identity);
         }
+    }
+
+    // Gismo for the era
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireCube(new Vector3((minX + maxX) / 2, dropHeight, (minZ + maxZ) / 2), new Vector3(maxX - minX, 0, maxZ - minZ));
     }
 }

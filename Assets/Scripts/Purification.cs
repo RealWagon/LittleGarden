@@ -61,7 +61,7 @@ public class Purification : MonoBehaviour
 
     void OnDrawGizmos()
     {
-        Gizmos.color = Color.black;
-        Gizmos.DrawWireSphere(transform.position, (health / 2f ));
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, transform.localScale.x * (health / 1f));
     }
 }
